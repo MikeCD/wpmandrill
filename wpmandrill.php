@@ -1749,7 +1749,7 @@ JS;
 						            
 					            case 'bcc':
 					                // TODO: Mandrill's API only accept one BCC address. Other addresses will be silently discarded
-					                $bcc = array_merge( (array) $bcc, explode( ',', $content ) );
+					                $bcc = array_merge( array(), explode( ',', $content ) );
 					                
 					                $message['bcc_address'] = $bcc[0];
 						            break;
